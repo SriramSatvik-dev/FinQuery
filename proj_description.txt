@@ -1,0 +1,137 @@
+Project: FinQuery — Plain-Language Financial Regulation Assistant
+Problem Statement
+Most Indian citizens are unaware of their rights and obligations under banking and financial regulations set by RBI and SEBI. Documents like Master Directions, FAQs, and circulars exist publicly but are either too dense for common people to understand or too scattered to navigate. People end up making uninformed financial decisions — missing grievance deadlines, not knowing loan restructuring rights, misunderstanding FD rules — simply because this information is inaccessible in practice.
+FinQuery is a closed-corpus, citation-enforced question answering system that lets users ask plain-language questions about Indian financial regulations and receives grounded, simple-English answers with direct citations to the source RBI/SEBI document. The system is designed around one core principle: a wrong answer about financial rules is worse than no answer. Therefore, when the corpus does not contain sufficient information to answer a query confidently, the system explicitly abstains rather than hallucinating.
+
+What the System Does
+
+Accepts a plain-language question from the user (e.g. "Can my bank charge me for not maintaining minimum balance?")
+Retrieves the most relevant chunks from a pre-ingested corpus of RBI/SEBI documents using hybrid retrieval (BM25 + dense semantic search)
+Reranks retrieved chunks using a cross-encoder model for precision
+If confidence is below a calibrated threshold → returns a structured refusal ("This query cannot be answered from the available regulatory corpus")
+If confidence is sufficient → generates a plain-English answer grounded strictly in the retrieved chunks, with inline citations pointing to the exact source document and section
+Evaluates answer quality using RAGAS faithfulness metric against a manually curated golden evaluation set
+
+
+Corpus
+Pre-ingested, fixed corpus sourced entirely from official public documents:
+
+RBI FAQs (banking, loans, deposits, KYC, grievance redressal)
+RBI Master Directions (selected topics: loans, interest rates, customer service)
+SEBI investor awareness and protection documents
+
+All documents are PDFs downloaded from rbi.org.in and sebi.gov.in. The corpus is fixed at ingestion time — no user uploads, no web search fallback.
+
+Architecture
+Ingestion pipeline (offline, run once):
+
+PDF loader preserving source filename and page number as metadata
+Chunker: 500–700 tokens per chunk, 100-token overlap, deterministic chunk IDs
+Embedder: sentence-transformers/all-mpnet-base-v2, vectors stored in ChromaDB locally
+BM25 index built from the same chunks and serialized to disk
+
+Query pipeline (LangGraph stateful graph):
+User Query
+    ↓
+[NODE: classify_query]
+    ├── "specific_reference" → [NODE: direct_retrieve]
+    └── "conceptual"        → [NODE: hyde_generate] → [NODE: hyde_retrieve]
+    ↓
+[NODE: rerank]
+cross-encoder/ms-marco-MiniLM-L-6-v2 scores each (query, chunk) pair
+    ↓
+[EDGE: confidence_gate]
+    ├── score < threshold → [NODE: abstain] → structured refusal
+    └── score ≥ threshold → [NODE: generate_answer]
+                                ↓
+                           [NODE: grounding_check]
+                                ↓
+                           [NODE: format_response]
+                                ↓
+                           Final answer with citations
+LangGraph State (RAGState TypedDict):
+pythonclass RAGState(TypedDict):
+    query: str
+    query_type: str           # "specific_reference" | "conceptual"
+    hyde_passage: str         # populated only for conceptual queries
+    candidate_chunks: list    # after union merge
+    reranked_chunks: list     # after cross-encoder
+    top_reranker_score: float
+    abstain: bool
+    answer: str | None
+    citations: list
+    grounding_passed: bool
+    final_response: dict
+
+Tech Stack
+LayerToolOrchestration LangGraph
+Embeddings sentence-transformers/all-mpnet-base-v2
+Vector Store ChromaDB (local persist)
+Sparse Retrieval BM25 via rank-bm25
+Reranking cross-encoder/ms-marco-MiniLM-L-6-v2
+LLM Groq API — llama-3.1-8b-instant
+Document Parsing PyMuPDF
+Evaluation RAGAS
+Prompt Management YAML config files
+
+Project Structure
+finquery/
+├── config/
+│   ├── prompts.yaml          # versioned prompts for all LLM calls
+│   └── settings.yaml         # chunk size, top-K, confidence threshold
+├── data/
+│   ├── raw/                  # downloaded RBI/SEBI PDFs
+│   └── golden_eval/
+│       └── golden_set.json   # 30-40 manually verified QA pairs
+├── src/
+│   ├── models.py             # shared dataclasses: Chunk, RankedChunk, Citation
+│   ├── config.py             # loads .env + settings.yaml into Settings object
+│   ├── ingestion/
+│   │   ├── loader.py         # PDF → RawDocument
+│   │   ├── chunker.py        # RawDocument → List[Chunk]
+│   │   └── embedder.py       # Chunk → ChromaDB + BM25 index
+│   ├── retrieval/
+│   │   ├── bm25_retriever.py
+│   │   ├── dense_retriever.py
+│   │   ├── hyde.py
+│   │   └── merger.py
+│   ├── reranking/
+│   │   └── cross_encoder.py
+│   ├── generation/
+│   │   ├── generator.py
+│   │   └── grounding.py
+│   └── graph/
+│       ├── state.py
+│       ├── nodes.py
+│       ├── edges.py
+│       └── pipeline.py
+├── eval/
+│   ├── ragas_eval.py
+│   └── run_eval.py
+├── ingest.py                 # run once to build the index
+├── query.py                  # CLI entrypoint: ask a question, get an answer
+└── requirements.txt
+
+Evaluation
+
+Golden set: 30–40 manually curated QA pairs covering factual queries (e.g. "What is the maximum time for a bank to resolve a complaint?"), conceptual queries (e.g. "How does the RBI regulate interest rates on savings accounts?"), and unanswerable queries (questions outside the corpus scope)
+RAGAS faithfulness target: ≥ 0.80
+RAGAS answer relevancy target: ≥ 0.75
+Abstention accuracy target: ≥ 0.90 (system correctly refuses out-of-scope queries)
+
+
+What This Project Is Not
+
+Not a deployment — runs locally, no server, no frontend
+Not a chatbot — single-turn QA only, no conversation history
+Not a financial advisor — it cites regulations, it does not give personal financial advice
+Not a web search system — strictly closed corpus, no external lookups
+
+
+Key Design Decisions Worth Explaining in Interviews
+
+Hybrid retrieval over dense-only — BM25 catches exact regulatory terminology (specific section numbers, legal terms) that semantic search misses. Dense retrieval catches paraphrased questions that BM25 misses. Neither alone is sufficient.
+Abstention over generation — in a financial regulation context, a confidently wrong answer is actively harmful. The confidence gate is a product decision, not just a technical one.
+Plain-English generation prompt — the LLM is explicitly instructed to translate regulatory language into simple terms while staying strictly within what the retrieved chunks say. This is the core UX insight of the project.
+Grounding check — a second LLM pass verifies that no claim in the answer goes beyond the retrieved chunks. Catches cases where the LLM "fills in" details not present in the context.
+Versioned prompts in YAML — prompt changes are tracked like code changes. A prompt regression is treated the same as a code regression.
