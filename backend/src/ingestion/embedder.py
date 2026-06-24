@@ -6,6 +6,7 @@ from langchain_core.documents import Document
 from rank_bm25 import BM25Okapi
 import pickle
 from pathlib import Path
+from src.retrieval.bm25_retriever import reload_index
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
@@ -63,6 +64,7 @@ def _rebuild_bm25() -> None:
     all_data = vector_store.get()
     all_texts = all_data["documents"]
     all_ids = all_data["ids"]
+    all_metadatas = all_data["metadatas"]
 
     if not all_texts:
         print("No chunks in ChromaDB - BM25 index not built")
@@ -75,7 +77,11 @@ def _rebuild_bm25() -> None:
         pickle.dump({
             "bm25": bm_25,
             "ids": all_ids,
-            "texts": all_texts
+            "texts": all_texts,
+            "metadatas": all_metadatas
         }, f)
 
     print("bm 25 index rebuilt and stored for all chunks")
+
+    reload_index()
+    print("BM25 index updated in memory")
