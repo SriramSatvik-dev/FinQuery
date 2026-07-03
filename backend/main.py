@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from src.ingestion.loader import load_data
 from src.ingestion.chunker import chunk_doc
 from src.ingestion.embedder import embed_and_store, delete_doc
+from src.graph.pipeline import run_pipeline
+from pydantic import BaseModel
 from pathlib import Path
 import shutil
 
@@ -21,6 +23,29 @@ print("Backend up and running")
 @app.get("/health")
 async def health():
     return {"status": "ok"}
+
+class QueryRequest(BaseModel):
+    query: str
+
+@app.post("/askquery")
+async def serveuser(request: QueryRequest):
+    print(request.query)
+    response = run_pipeline(request.query)
+    if response['abstained']:
+        return {
+            'abstained': True,
+            'reason': response['reason'],
+            'message': response['message'],
+            'answer': None,
+            'citations': []
+        }
+    return {
+        'abstained': False,
+        'answer': response['answer'],
+        'citations': response['citations'],
+        'query_type': response['query_type'],
+        'top_reranker_score': response['top_reranker_score']
+    }
 
 BASE_DIR = Path(__file__).resolve().parent
 
