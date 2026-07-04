@@ -14,20 +14,18 @@ def query_classifier(state: RAGState):
     }
 
 def hyde_query_gen(state: RAGState):
-    return {
-        'hyde_passage': hyde_gen(state['query'])
-    }
+    passage = hyde_gen(state['query'])
+    return {'hyde_passage': passage}
 
 def retrieve(state: RAGState):
     bm25_chunks = bm25_query(state['query'])
-    if(state['query_type'] == 'conceptual'):
+    
+    if state['query_type'] == 'conceptual':
         dense_chunks = dense_query(state.get('hyde_passage', state['query']))
     else:
         dense_chunks = dense_query(state['query'])
-
-    return {
-        'candidate_chunks': merge(bm25_chunks, dense_chunks)
-    }
+    
+    return {'candidate_chunks': merge(bm25_chunks, dense_chunks)}
 
 def reranker(state: RAGState):
     ranked_chunks, top_score = rerank(state['query'], state['candidate_chunks'])

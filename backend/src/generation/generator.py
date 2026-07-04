@@ -13,9 +13,11 @@ Rules you must follow:
   sufficient information in the available documents to answer this question"
 - Never make up information not present in the context
 - Explain regulatory language in simple terms
-- Be concise and direct"""
+- Be concise and direct
+- If you find relevant information in the context, answer directly and confidently
+- Do not say you cannot find information if you can actually find it in the chunks"""
 
-pattern = r'\[([a-f0-9]{16})\]'
+pattern = r'\[chunk_id:\s*([a-f0-9]{16})\]'
 
 def generate(query_str: str, context_chunks: list[RankedChunk], limit: int = 5) -> tuple[str, list[Citation]]:
     context = ""
@@ -45,7 +47,7 @@ Answer: """
     chunk_map = {rc.chunk.chunk_id: rc.chunk for rc in context_chunks}
 
     citations = []
-    seen_ids = {}
+    seen_ids = set()
 
     for cited_id in cited_ids:
         if cited_id in chunk_map and cited_id not in seen_ids:

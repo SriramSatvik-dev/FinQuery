@@ -4,6 +4,6 @@ import os
 
 load_dotenv()
 
-CONFIDENCE_THRESHOLD = os.getenv("CONFIDENCE_THRESHOLD")
+CONFIDENCE_THRESHOLD = float(os.getenv("CONFIDENCE_THRESHOLD", "0.3"))
 
 llm = Groq(api_key=os.getenv("GROQ_API_KEY"))
