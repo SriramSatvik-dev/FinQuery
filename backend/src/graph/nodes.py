@@ -19,6 +19,12 @@ def hyde_query_gen(state: RAGState):
 
 def retrieve(state: RAGState):
     bm25_chunks = bm25_query(state['query'])
+
+    print("Sample BM25 chunks:")
+    for chunk in bm25_chunks[:2]:
+        print(f"--- chunk ---")
+        print(chunk.text[:300])
+        print()
     
     if state['query_type'] == 'conceptual':
         dense_chunks = dense_query(state.get('hyde_passage', state['query']))
