@@ -211,6 +211,11 @@ Faithfulness measures whether every claim in the answer is supported by the retr
 
 ---
 
+For a detailed record of key engineering decisions and tradeoffs made 
+during development, see [ENGINEERING_DECISIONS.md](./ENGINEERING_DECISIONS.md).
+
+---
+
 ## Setup
 
 ```bash
