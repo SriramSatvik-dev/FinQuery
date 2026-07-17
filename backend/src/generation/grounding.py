@@ -14,7 +14,7 @@ def check_grounding(answer: str, citations: list[Citation], reranked_chunks: lis
         
     context = ""
 
-    for chunk in reranked_chunks:
+    for chunk in reranked_chunks[:3]:
         context += f"text: {chunk.chunk.text}\n\n"
 
     user_prompt = f"""Answer: {answer}

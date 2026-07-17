@@ -1,0 +1,346 @@
+[
+  {
+    "question": "Is KYC mandatory to open a bank account?",
+    "expected_answer":  "Yes. KYC is mandatorily required at the time of commencement of an account-based relationship, i.e., when opening any type of account with a Regulated Entity (RE), including a bank.",
+    "system_answer": "Yes, KYC is mandatorily required to be carried out at the time of commencement of an account-based relationship, i.e., opening any type of account with the RE [chunk_id: a1a6593454f9b88c].",
+    "retrieved_contexts": [
+      "misused for Money Laundering/ Terrorist Financing/ Proliferation Financing (ML/TF/PF)\npurposes.\nQ 2.    Is KYC mandatory? When a RE is required to carry out KYC?\nAns. Yes, KYC is mandatorily required to be carried out:\n  (a)    at the time of commencement of an account-based relationship, i.e., opening\n      any type of account with the RE; or"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "How can a person be identified based on KYC?",
+    "expected_answer": "An individual customer can be onboarded through face-to-face methods, including visiting the branch, e-KYC authentication, offline Aadhaar verification, certified copies of Officially Valid Documents (OVDs), the Digital KYC Process, or Video-based Customer Identification Process (V-CIP). Non-face-to-face onboarding can be done using Aadhaar OTP-based e-KYC authentication, digital channels such as CKYCR, DigiLocker, equivalent e-documents, and permitted non-digital modes for NRIs and PIOs.",
+    "system_answer": "A person can be identified based on KYC through various methods, including:\n\n- Obtaining certified copies of Officially Valid Documents (OVDs) or equivalent e-documents thereof [chunk_id: 684f78221c3eb1b6]\n- Undertaking the Digital KYC Process, as per paragraph 16 of the MD on KYC [chunk_id: 684f78221c3eb1b6]\n- Video-based Customer Identification Process (V-CIP) complying with prescribed standards and procedures [chunk_id: 684f78221c3eb1b6]\n- Using Aadhaar OTP-based e-KYC authentication [chunk_id: 684f78221c3eb1b6]\n- Using digital channels such as CKYCR, DigiLocker, equivalent e-document, etc. [chunk_id: 684f78221c3eb1b6]\n- Non-face-to-face onboarding using Aadhaar OTP-based e-KYC authentication [chunk_id: 684f78221c3eb1b6]\n\nAdditionally, a person can also be identified through the use of a KYC Identifier, which is a unique number or code assigned to a customer by the Central KYC Records Registry (CKYCR) [chunk_id: 97155b25b62b2f30].",
+    "retrieved_contexts": [
+      "obtaining  certified copy  of  the OVD  or  equivalent e-document  thereof;\n         undertaking \u2018Digital KYC Process\u2019, as per paragraph 16 of the MD on KYC.\n       \u2022   Video  based  Customer  Identification  Process  (V-CIP)  complying  with\n          prescribed standards and procedures.\n       (b) Non-face-to-face onboarding:\n       \u2022  using Aadhaar OTP based e-KYC authentication;\n       \u2022  using digital channels such as CKYCR, DigiLocker, equivalent e-document, etc.,",
+      "\u2022  using digital channels such as CKYCR, DigiLocker, equivalent e-document, etc.,\n        and non-digital modes such as obtaining copy of OVD certified by additional\n           certifying authorities as allowed for NRIs and PIOs.\nQ 14.  What is a KYC Identifier? How is it useful for a customer?\nAns. KYC Identifier means the unique number or code assigned to a customer of an RE\nby the Central KYC Records Registry (CKYCR). If the customer approaches an RE for"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What are the update policies of KYC?",
+    "expected_answer": "Regulated Entities (REs) are required to periodically update customers' KYC records as part of ongoing due diligence to ensure that customer information remains up to date and relevant. The frequency of periodic KYC updation depends on the customer's risk category: at least once every two years for high-risk customers, every eight years for medium-risk customers, and every ten years for low-risk customers. Customers must submit the required KYC documents if their KYC information has changed, while a self-declaration is sufficient in cases of no change or change only in address, as applicable. REs must notify customers in advance, send reminders for pending KYC updates, and provide an acknowledgement once updated KYC information or a self-declaration is submitted. If a customer fails to complete periodic KYC updation even after due notice, the RE may close the customer's account in accordance with the Prevention of Money-Laundering (Maintenance of Records) Rules, 2005.",
+    "system_answer": "According to [chunk_id: c26cb4f9ce2b8e02], the RE is required to update the customers' KYC records as part of ongoing due diligence process to ensure that the information or data collected under CDD is kept up to date and relevant.\n\nThe periodicity of such updation depends on the risk categorisation of the customer by the RE and such periodic updation of KYC records shall be carried out at least once in every two years for high-risk, eight years for medium risk, and ten years for low-risk customers. However, the RE may adopt any additional periodicity as per their risk assessment. [chunk_id: f7e464516d8b4828]\n\nFor periodic updation of KYC, the customer has to provide the documents as mentioned in the reply to Q 5 above, which includes updated OVD/ other documents. [chunk_id: d63a787261a8cd95]\n\nThe RE shall intimate its customer, in advance, to comply with the requirement of periodic updation of KYC. Subsequent to the due date, the RE shall also give reminders to such customer who has still not complied with the requirements, despite advance intimations. [chunk_id: 56031429e1d3915b]\n\nIf periodic updation of KYC is not done even after advance intimations/ reminders, the Prevention of Money-Laundering (Maintenance of Records) Rules, 2005 enable the REs to close the account of the customers after giving due notice. [chunk_id: e8e745e19283be7a]\n\nOnce a customer submits updated KYC information or self-declaration to the RE, it shall provide an acknowledgement to this effect to the customer. [chunk_id: 217769b7fcc781df]",
+    "retrieved_contexts": [
+      "OTP based e-KYC authentication; and\n     (c) for updation/ periodic updation of KYC records of eligible customers.\nQ 22. Why does an RE periodically ask for KYC documents from the customer\nwhen the customer has already submitted the same during opening of account?\nAns. RE is required to update the customers\u2019 KYC records as part of ongoing due diligence\nprocess to ensure that the information or data collected under CDD is kept up to date and",
+      "process to ensure that the information or data collected under CDD is kept up to date and\nrelevant. The periodicity of such updation depends on the risk categorisation of the\ncustomer by the RE and such periodic updation of KYC records (at times referred to as\nre-KYC) shall be carried out at least once in every two years for high-risk, eight years for\nmedium risk and ten years for low-risk customers. However, RE may adopt any additional",
+      "information/ notification, if any, received from CKYCR for the customer concerned.\nQ 25.  What documents are needed for periodic updation of KYC?\nAns. The requirement of KYC documents depends on the modes used for periodic\nupdation of KYC as detailed in the reply to Q 24, above.\n     (a) In case of change in the KYC information, the customer has to provide the\n      documents as mentioned in the reply to Q 5 above;",
+      "pending periodic updation of KYC?\n Ans. Yes, the RE shall intimate its customer, in advance, to comply with the requirement\n of periodic updation of KYC. Subsequent to the due date, RE shall also give reminders to\n such customer who has  still not complied with the requirements, despite advance\n intimations.\nQ 28.  What happens if periodic updation of KYC is not done even after advance\nintimations/ reminders?\nAns. Prevention of Money-Laundering (Maintenance of Records) Rules, 2005 enable the",
+      "Ans. Prevention of Money-Laundering (Maintenance of Records) Rules, 2005 enable the\nREs to obtain the identity records (including updated records of  identity) from the\ncustomers, failing which the RE shall close the account of the customers after giving due\nnotice.\nQ 29.  What should a customer do if he receives SMS/ email with links to complete\nperiodic updation of KYC?\nAns. The customer shall exercise utmost caution before clicking links embedded in such",
+      "Q 26. Can the customer get an acknowledgment from the RE after submitting the\nKYC documents for periodic updation of KYC?\nAns. Yes, once a customer submits updated KYC information or self-declaration to the\nRE,  it shall provide an acknowledgement to this effect to the customer. Upon updating\nKYC information, the RE shall also intimate customers about such updation.\nQ 27. Are the REs required to give due notices to the customer for completing his\npending periodic updation of KYC?"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Can I change the billing cycle of my credit card?",
+    "expected_answer": "Yes. A cardholder can choose any date as the starting or closing day of the billing cycle at least once. Card issuers may also provide multiple channels for modifying the billing cycle, such as a helpline, dedicated email ID, Interactive Voice Response (IVR), internet banking, mobile application, or other suitable modes.",
+    "system_answer": "Yes, you can change the billing cycle of your credit card [chunk_id: fd43ba622ae45120]. The card issuer shall provide you with the option to choose any date as the starting or closing day of the billing cycle at least once. You can modify the billing cycle through multiple channels such as a helpline or a dedicated website.",
+    "retrieved_contexts": [
+      "Query 9. Can a cardholder modify the billing cycle of a credit card to any date?\nIf yes, what options are available to the cardholder to carry out the modification?\nResponse: The cardholder shall be provided option to choose any date as the starting\nor closing day of the billing cycle at least once. Further, card-issuers may provide the\noption to modify the billing cycle through multiple channels such as helpline, dedicated"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "My card issuer has been billing more than required. How can I lodge a complaint against them?",
+    "expected_answer": "You should first approach the concerned card issuer with your complaint. If the card issuer does not respond within 30 days, rejects the complaint wholly or partly, or if you are not satisfied with the response, you can lodge a complaint with the RBI Ombudsman. Complaints can be submitted online through the CMS portal or by sending a physical complaint in the prescribed format under the Reserve Bank - Integrated Ombudsman Scheme, 2021 to the Centralised Receipt and Processing Centre.",
+    "system_answer": "To lodge a complaint against your card issuer for billing more than required, you must first approach the concerned card issuer. If they do not respond within 30 days or if you are not satisfied with their response, you can lodge a complaint with the RBI Ombudsman through the following methods: \n\ni. Online at https://cms.rbi.org.in.\nii. Physical complaint (letter/post) in the form as specified in Annexure \u2018A\u2019 of the Reserve Bank - Integrated Ombudsman Scheme, 2021 to \u201cCentralised Receipt and Processing Centre, 4th Floor, Reserve Bank of India, Sector -17, Central Business District, Rohini, Delhi-110085\u201d [chunk_id: 369d00d8e12be5b2]",
+    "retrieved_contexts": [
+      "not satisfied with the response/resolution given by the card-issuer, the customer can\nlodge his/her complaint with the Ombudsman, Reserve Bank through any of the\nfollowing methods:\n    i.   Online at https://cms.rbi.org.in.\n   ii.   Physical complaint (letter/post) in the form as specified in Annexure \u2018A\u2019 of the\n      Reserve Bank - Integrated Ombudsman Scheme, 2021 to \u201cCentralised Receipt\n     and Processing Centre, 4th Floor, Reserve Bank of India, Sector -17, Central"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Are banks required to report frauds to police?",
+    "expected_answer": "Yes. Regulated Entities (REs) are required to immediately report incidents of fraud to Law Enforcement Agencies (LEAs), subject to applicable laws. REs are advised to mandatorily report incidents of fraud involving an amount of ₹1 lakh or more to LEAs.",
+    "system_answer": "According to [chunk_id: 8d5d4cdbd40d57d7], banks are required to immediately report incidents of fraud to Law Enforcement Agencies (LEAs), subject to applicable laws. However, under Section 33 of Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS), a person is not mandatorily required to report to LEAs information on commission of all offences, but only on those offences which are listed in that Section. REs are, however, advised to mandatorily report incidents of fraud involving an amount of \u20b91 lakh or more to LEAs. [chunk_id: 45d7d96cb30c34b8] also mentions that REs are advised to mandatorily report incidents of fraud involving an amount of \u20b91 lakh or more to LEAs.",
+    "retrieved_contexts": [
+      "Q.2 Is discretion available to REs for reporting of incidents of frauds to the Law\nEnforcement Agencies (LEAs), especially in case of small value frauds? Or\nwhether banks are mandatorily required to report small value frauds to police\nunder Master Directions on Fraud?\nAns: Paragraph 5.1 of the Master Directions requires Regulated Entities (REs) to\nimmediately report incidents of fraud to Law Enforcement Agencies (LEAs), subject to",
+      "immediately report incidents of fraud to Law Enforcement Agencies (LEAs), subject to\napplicable laws. Under Section 33 of Bharatiya Nagarik Suraksha Sanhita, 2023\n(BNSS), a person  is not mandatorily required to report to LEAs information on\ncommission of all offences, but only on those offences which are listed in that Section.\nREs are, however, advised to mandatorily report incidents of fraud involving an amount\nof \u20b91 lakh or more to LEAs."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What is the udgam portal all about?",
+    "expected_answer": "UDGAM (Unclaimed Deposits-Gateway to Access inforMation) is an online portal developed by the Reserve Bank of India (RBI) that enables registered users to search for unclaimed deposits/accounts across multiple banks in a centralized manner.",
+    "system_answer": "The UDGAM portal is an online platform developed by the RBI (Reserve Bank of India) to facilitate the search of unclaimed deposits/accounts across multiple banks at one place in a centralized manner [chunk_id: 9f2f8f96bc8ecf97].",
+    "retrieved_contexts": [
+      "Frequently Asked Questions (FAQs) on UDGAM Portal\n\n\n1. What is UDGAM portal?\nUDGAM refers to Unclaimed Deposits-Gateway to Access inforMation, which is an online portal\ndeveloped by RBI.  It facilitates the registered users to search unclaimed deposits/accounts\nacross multiple banks at one place in a centralised manner."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What happens in case of a failed atm transaction?",
+    "expected_answer": "In the event of a failed ATM transaction where the customer's account is debited, banks are required to re-credit the customer's account within a maximum of T+5 calendar days (where 'T' is the day of the transaction). If the re-credit is delayed beyond five calendar days, the card issuing bank must pay compensation of ₹100 per day until the amount is re-credited. Customers are also advised to lodge a complaint with the card issuing bank or ATM owner bank at the earliest.",
+    "system_answer": "In case of a failed ATM transaction, the card issuing bank has to re-credit the customer's account within a maximum of T+5 calendar days (where 'T' is the day of transaction) [chunk_id: 4f9a87bfdeb385ca]. If the bank fails to do so, the card issuing bank has to pay compensation of Rs. 100/- per day for delay in re-crediting the customer's amount beyond 5 calendar days from the date of the failed ATM transaction [chunk_id: 4870666b9b7aa5a4].",
+    "retrieved_contexts": [
+      "Ans. In the case of a failed ATM transaction, the banks have been mandated to re-credit the\ncustomer\u2019s account within a maximum of T+5 calendar days (where \u2018T\u2019 is the day of transaction).\n21. Are the customers  eligible  for compensation  for delays beyond days of a  failed\ntransaction?\nAns. Yes, the card issuing bank has to pay compensation of Rs. 100/- per day for delay in re-crediting\nthe customer\u2019s amount beyond 5 calendar days from the date of the failed ATM transaction. The",
+      "18. What steps should a customer take in case of a failed ATM transaction when his / her\naccount is debited?\nAns. Though banks are supposed to reverse such transactions on their own,  it is always a good\npractice to lodge a complaint with the card issuing bank or ATM owner bank at the earliest.\n19. From where the customer can get the contact numbers for lodging a complaint?\nAns. Banks  / WLA Operators are required to display the name(s) and the contact number(s) of"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "How should we keep our atm transaction secure?",
+    "expected_answer": "Customers should keep their ATM/WLA transactions secure by conducting transactions in complete privacy, ensuring only one cardholder enters the ATM/WLA kiosk at a time, not lending their card or sharing their PIN, not writing the PIN on the card, using a PIN that is difficult to guess, never leaving the card in the ATM/WLA, registering their mobile number to receive transaction alerts, immediately reporting any unauthorized transactions to the card issuing bank, checking for any suspicious devices attached to the ATM/WLA, being cautious of suspicious persons offering assistance, and ignoring any requests for card details or PIN over telephone or email, as bank officials never ask for such information.",
+    "system_answer": "To keep your ATM transaction secure, follow these Do's and Don'ts:\n\n- Conduct the ATM transaction in complete privacy [chunk_id: 51178d734acd01ab].\n- Only one card holder should enter and access the ATM kiosk at a time [chunk_id: 51178d734acd01ab].\n- The card holder should not lend his/her card to anyone [chunk_id: 51178d734acd01ab, 7e1257f02e1e894a].\n- Change the PIN immediately when the card is received from the bank [chunk_id: ea4ce31bb4b3c24c].\n- Don't write down your PIN number anywhere, memorize it [chunk_id: ea4ce31bb4b3c24c].\n- Preferably use an ATM within bank premises or premises that are manned 24*7 by a security guard [chunk_id: ea4ce31bb4b3c24c].\n- The card holder should never leave the card in the ATM [chunk_id: 2a67b79c5b14b101, 7e1257f02e1e894a].\n- Register your mobile number with the card issuing bank for getting alerts for transactions at ATMs/WLAs [chunk_id: 2a67b79c5b14b101].\n- Be vigilant and check if any extra device is attached to the ATM [chunk_id: 2a67b79c5b14b101].\n- Keep an eye on suspicious movement of people around the ATMs/WLAs [chunk_id: 237d9f3241f685d8].\n- Don't respond to any communication from anyone indicating that they represent your bank, asking for card details or PIN over telephone/email [chunk_id: 237d9f3241f685d8].",
+    "retrieved_contexts": [
+      "pieces through the magnetic strip / chip before disposing it off.\n24. How should the customer keep his / her ATM / WLA transaction secure?\nAns. Customers should observe the following Do\u2019s and Don\u2019ts to keep their transactions at ATMs /\nWLAs safe and secure :\n    \u2022  Customer should conduct the ATM / WLA transaction in complete privacy.\n    \u2022  Only one card holder should enter and access the ATM / WLA kiosk at a time.\n    \u2022  The card holder should not lend his / her card to anyone.",
+      "Things to keep in mind while transacting through ATM card:\n\uf0b7  Change the PIN immediately when the card is received from bank.\n\uf0b7  Don't write down your PIN number anywhere. Memorize it. Don't disclose your PIN\n   number to any third person.\n\uf0b7  Preferably use an ATM within bank premises or premises which are manned 24*7 by\n   a security guard. Use  it personally. Bank has no liability in case the ATM card has\n   been handed over for transaction to any other person except the account holder.",
+      "\u2022  The card holder should never leave the card in the ATM / WLA.\n    \u2022  The card holder should register his / her mobile number with the card issuing bank for getting\n         alerts for transactions at ATMs / WLAs. Any unauthorized card transaction in the account, if\n       observed, should be immediately reported to the card issuing bank.\n    \u2022  The card holder should be vigilant and check if any extra device/s is / are attached to the ATMs",
+      "\u2022  The card holder should keep an eye on suspicious movement/s of people around the ATMs /\n      WLAs. He / She should be careful of strangers trying to engaging him / her in conversation or\n         offering assistance / help in operating the ATM.\n    \u2022  The card holder should remember that bank officials never ask for card details or PIN over\n       telephone / email. So, he / she should not respond to any such communication from anyone\n         indicating that they represent his / her bank."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Is cts mandatory for cheques?",
+    "expected_answer": "No. Non-CTS cheques are not invalid and continue to be valid as negotiable instruments. However, only CTS-2010 standard compliant cheques can be presented for clearing through the Cheque Truncation System (CTS). Banks have been advised to issue only CTS-2010 compliant cheques and to withdraw non-CTS cheques from customers.",
+    "system_answer": "No, CTS is not mandatory for cheques [chunk_id: b0ea5c11ee692375]. Although banks have been advised to issue only CTS-2010 standard compliant cheques from September 30, 2012, non-CTS cheques continue to be valid as a negotiable instrument. However, they cannot be presented in CTS [chunk_id: b0ea5c11ee692375].",
+    "retrieved_contexts": [
+      "5. Are non-CTS cheques invalid?\nBanks have been advised to issue only CTS-2010 standard compliant cheques from\nSeptember 30, 2012. Earlier, there were separate clearing sessions for non-CTS cheques.\nHowever, they were discontinued with effect from December 31, 2018. As of now, non-CTS\ncheques cannot be presented in CTS. Bank have been advised to withdraw the non-CTS\ncheques from the customers. However, a non-CTS cheque continues to be valid as a\nnegotiable instrument."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Does the bank charge for cheque collection?",
+    "expected_answer": "For collection of cheques up to and including ₹1,00,000, banks do not charge any service fee for savings account customers. For cheques above ₹1,00,000 and for other types of accounts, banks may levy service charges as per their Cheque Collection Policy, which should be communicated to customers.",
+    "system_answer": "According to [chunk_id: e767cc05e95ee30c], for collection of cheques up to and including \u20b91,00,000/-, there is no service charge for savings account customers. For cheques with value above that and for other account types, service charges may be decided by the concerned banks and communicated to their customers as part of their Cheque Collection Policy.",
+    "retrieved_contexts": [
+      "FAQs on Cheque Clearing\n\n\n\n13. How much can a bank charge for cheque collection?\nFor collection of cheques up to and including \u20b91,00,000/-, there is no service charge for\nsavings account customers. For cheques with value above that and for other account types,\nservice charges may be decided by the concerned banks and communicated to their\ncustomers as part of their Cheque Collection Policy."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Explain about pss act.",
+    "expected_answer": "The Payment and Settlement Systems (PSS) Act, 2007 provides the legal framework for the regulation and supervision of payment systems in India. It designates the Reserve Bank of India (RBI) as the authority for regulating and supervising payment systems through the Payments Regulatory Board. The Act also provides the legal basis for netting and settlement finality and governs matters related to the authorization, operation, regulation, and oversight of payment systems in India.",
+    "system_answer": "The Payment and Settlement Systems (PSS) Act, 2007 is a law that regulates payment systems in India. It was enacted to provide a framework for the regulation and supervision of payment systems in the country. The Act designates the Reserve Bank of India (RBI) as the authority responsible for regulating and supervising payment systems in India [chunk_id: 65fd417e21ae340d].\n\nThe PSS Act, 2007 lays down the duties of system providers, which include operating the payment system in accordance with the provisions of the Act and the Regulations, and acting in accordance with the contract governing the relationship among the parties [chunk_id: efec21ab925f6311].\n\nThe Act also provides for the regulation and supervision of payment systems, including clearing and settlement systems, and designates the RBI as the authority responsible for that purpose [chunk_id: 65fd417e21ae340d].\n\nThe PSS Act, 2007 also provides for the imposition of penalties for contraventions of the Act, and empowers the RBI to conduct inspections and investigations to ensure compliance with the Act [chunk_id: 4218011fcb7e9dd6].\n\nOverall, the PSS Act, 2007 aims to promote the stability and efficiency of payment systems in India, and to protect the interests of users of payment systems.",
+    "retrieved_contexts": [
+      "Ans. The PSS Act, 2007 provides for the regulation and supervision of payment\nsystems in India and designates the Reserve Bank of India (Reserve Bank) as the\nauthority for that purpose and all related matters. The Reserve Bank shall exercise the\npowers, perform the functions and discharge the duties conferred on it under the PSS\nAct, 2007 through a Board to be known as the \u201cPayments Regulatory Board\u201d. The Act",
+      "Ans. The PSS Act, 2007 lays down the duties of the system provider. The system\nprovider is required to operate the payment system in accordance with the provisions\nof the Act and the Regulations, the terms and conditions of authorization and the\ndirections given by the Reserve Bank from time to time. The system provider is also\nrequired to act in accordance with the contract governing the relationship among the",
+      "of the provisions of the Act, Regulations, order, directions etc., are offences punishable\nfor which Reserve Bank can initiate criminal prosecution. Reserve Bank  is also\nempowered to impose fine for certain contraventions under the Act. (Sections 26 and\n30 of the PSS Act, 2007)."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What are the terms involved in pss act?",
+    "expected_answer": "The PSS Act, 2007 defines several commonly used terms in Section 2(1), including 'payment obligation', 'payment instruction', 'payment system', 'electronic fund transfer', 'gross settlement system', 'netting', 'settlement', 'systemic risk', 'system participant', and 'system provider'.",
+    "system_answer": "The Payment and Settlement Systems Act, 2007 (PSS Act, 2007) defines various terms related to payment systems in India. These terms include:\n\n- \"Payment obligation\" [chunk_id: a031fddd5a622ef9]\n- \"Payment instruction\" [chunk_id: a031fddd5a622ef9]\n- \"Payment system\" [chunk_id: a031fddd5a622ef9]\n- \"Electronic fund transfer\" [chunk_id: a031fddd5a622ef9]\n- \"Gross settlement system\" [chunk_id: a031fddd5a622ef9]\n- \"Netting\" [chunk_id: e3abfb2a3e6b2bdc]\n- \"Settlement\" [chunk_id: e3abfb2a3e6b2bdc]\n- \"Systemic risk\" [chunk_id: e3abfb2a3e6b2bdc]\n- \"System participant\" [chunk_id: e3abfb2a3e6b2bdc]\n- \"System provider\" [chunk_id: efec21ab925f6311]\n\nThese terms are defined in Section 2(1) of the PSS Act, 2007.",
+    "retrieved_contexts": [
+      "Q 5. Does the PSS Act, 2007 define what is a \u201cpayment obligation\u201d, \u201cpayment\ninstruction\u201d, \u201cpayment system\u201d and other commonly used terms like \u201celectronic\nfund transfer\u201d, \u201cgross settlement system\u201d, \u201cnetting\u201d, \u201csettlement\u201d, \u201csystemic\nrisk\u201d, \u201csystem participant\u201d and \u201csystem provider\u201d?\n\nAns. Yes, these terms are defined in Section 2 (1) of the PSS Act, 2007.",
+      "required to act in accordance with the contract governing the relationship among the\nsystem participants and the rules and regulations which deal with the operation of the\npayment system. The Act requires the system provider to disclose the terms and\nconditions including the charges, limitations of liability etc., under the payment system\nto the system participants. The Act also requires the system provider to provide copies",
+      "Ans. The PSS Act, 2007 lays down the duties of the system provider. The system\nprovider is required to operate the payment system in accordance with the provisions\nof the Act and the Regulations, the terms and conditions of authorization and the\ndirections given by the Reserve Bank from time to time. The system provider is also\nrequired to act in accordance with the contract governing the relationship among the"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What happens if an enterprise is unable to get registered on the URP portal due to lack of required documents?",
+    "expected_answer": "Enterprises that are unable to register on the Udyam Registration Portal (URP) due to the absence of mandatory documents such as PAN or GSTIN can register through the Udyam Assist Platform (UAP). The platform, managed by SIDBI, facilitates the formalisation of Informal Micro Enterprises (IMEs) with the assistance of designated RBI-regulated entities. The Udyam Assist Certificate issued through UAP is treated at par with the Udyam Registration Certificate for Priority Sector Lending (PSL) benefits, and IMEs holding this certificate are treated as micro enterprises for PSL classification.",
+    "system_answer": "The Udyam Assist Platform (UAP) has been launched to facilitate the registration of Informal Micro Enterprises (IMEs) that are unable to get registered on the Udyam Registration Portal (URP) due to lack of mandatory documents such as PAN or Goods and Services Tax Identification Number (GSTIN) [chunk_id: f38386f66e6f3d48]. The UAP is managed by SIDBI, and registration of enterprises on the platform is done with the assistance of Designated Agencies, which are RBI-regulated entities [chunk_id: ba71ab22b1545111].",
+    "retrieved_contexts": [
+      "Q.2. What measure has been taken for enterprises those are unable to get registered\n on the Udyam Registration Portal (URP) due to lack of mandatory documents such as\n PAN or Goods and Services Tax Identification Number (GSTIN)?\n Ministry of Micro, Small and Medium Enterprises, Government of India has launched the\n Udyam Assist Platform (UAP) to facilitate formalisation of Informal Micro Enterprises (IMEs)",
+      "The UAP is managed by SIDBI wherein registration of enterprises on the platform is done with\n the assistance of Designated Agencies which are RBI regulated entities (including scheduled\n commercial banks, non-banking financial companies, etc.). The certificate issued on UAP to\n IMEs is treated at par with URC for the purpose of availing PSL benefits. IMEs with an Udyam\n Assist Certificate are treated as micro enterprises for the purpose of PSL classification. (Refer"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Are there any targets set by rbi to banks for lending to msmes?",
+    "expected_answer": "Yes. RBI has prescribed a sub-target of 7.5% of Adjusted Net Bank Credit (ANBC) or Credit Equivalent of Off-Balance Sheet Exposure (CEOBE), whichever is higher, for lending to micro enterprises under the overall Priority Sector Lending target. This sub-target applies to domestic commercial banks, foreign banks with 20 branches and above, Regional Rural Banks, and Small Finance Banks.",
+    "system_answer": "Yes, there are targets set by RBI for lending to MSMEs. [chunk_id: 87d5dc47063c44a6] states that a sub-target of 7.5% of Adjusted Net Bank Credit (ANBC) or Credit Equivalent of Off-Balance Sheet Exposure (CEOBE), whichever is higher, towards lending to the Micro-enterprises under overall Priority Sector Lending has been prescribed for Domestic commercial banks, Foreign banks with 20 branches and above, Regional Rural Banks and Small Finance Banks.",
+    "retrieved_contexts": [
+      "Q.6. Are there any targets prescribed for lending by banks to MSMEs?\nA sub-target of 7.5% of Adjusted Net Bank Credit (ANBC) or Credit Equivalent of Off-Balance\nSheet Exposure (CEOBE), whichever is higher, towards lending to the Micro-enterprises\nunder overall Priority Sector Lending has been prescribed for Domestic commercial banks,\nForeign banks with 20 branches and above, Regional Rural Banks and Small Finance Banks."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What kind of guidances are given by banks to mse entrepreneurs?",
+    "expected_answer": "Yes. Banks provide guidance to MSE entrepreneurs through Rural Self Employment Training Institutes (RSETIs), which conduct skill upgradation programmes and facilitate financial assistance, and through Financial Literacy Centres (FLCs), which provide financial literacy, consultancy support, operational skills, accounting and finance, business planning, and conduct target-specific financial literacy camps for MSEs.",
+    "system_answer": "Banks provide the following services to MSE entrepreneurs:\n\n(i) Rural Self Employment Training Institutes (RSETIs) [chunk_id: d0752c733f33d34e]\n(ii) Financial Literacy and consultancy support: Banks provide assistance to MSE entrepreneurs in regard to financial literacy, operational skills, including accounting and finance, business planning etc. [chunk_id: 0136e66a99e94002]",
+    "retrieved_contexts": [
+      "Q.21. Apart from the loans and other banking facilities, do the banks provide any\nguidance to MSE entrepreneurs?\nYes, banks provide following services to the MSE entrepreneurs:\n(i) Rural Self Employment Training Institutes (RSETIs)\nAt the initiative of the Ministry of Rural Development (MoRD), Rural Self Employment Training\nInstitutes (RSETIs) have been set up by various banks all over the country. These RSETIs\nare managed by banks with active co-operation from the Government of India and State",
+      "entrepreneurs in regard to financial literacy, operational  skills, including accounting and\nfinance, business planning etc. (Refer circular RPCD.MSME & NFS.BC.No.20/06.02.31/2012-\n13 dated August 1, 2012).\nAlso, Financial Literacy Centres operated by Scheduled commercial Banks (including RRBs)\nhave been advised vide our circular FIDD.FLC.BC.No.22/12.01.018/2016-17 dated March 02,\n2017 to conduct target specific financial literacy camps wherein one of the target groups\nidentified is MSEs."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Does the rbi contact center lodge complaints on behalf of complainants?",
+    "expected_answer": "No. Complaints cannot be filed directly through the RBI Contact Center. The Contact Center only provides guidance on the procedure for filing complaints through the CMS portal, e-mail or physical mode, and provides information on the status of complaints.",
+    "system_answer": "No, the RBI Contact Center does not lodge complaints on behalf of complainants [chunk_id: 8a9c6a1b02fa8612]. It can only assist complainants by providing guidance on the procedure for filing complaints through CMS, e-mail or physical mode and by providing information on the status of complaints.",
+    "retrieved_contexts": [
+      "11. Can complaints under RB-IOS, 2026 be filed through the Contact Center?\nNo. Complaints cannot be filed directly through the Contact Center. The Contact Center can\nassist complainants by providing guidance on the procedure for filing complaints through\nCMS, e-mail or physical mode and by providing information on the status of complaints."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Is there any alternate grievance redressal mechanism for customer complaints?",
+    "expected_answer": "Yes. The Reserve Bank - Integrated Ombudsman Scheme, 2026 (RB-IOS, 2026) is a cost-free, expeditious and non-adversarial alternate grievance redress mechanism for customer complaints involving deficiency in service by Regulated Entities covered under the Scheme.",
+    "system_answer": "Yes, there is an alternate grievance redressal mechanism for customer complaints. [chunk_id: d2970414c2ff0122] states that the Reserve Bank - Integrated Ombudsman Scheme, 2026 (RB-IOS, 2026) is a cost-free, expeditious and non-adversarial alternate grievance redress mechanism for customer complaints involving deficiency in service by Regulated Entities covered under the Scheme.",
+    "retrieved_contexts": [
+      "Frequently Asked Questions\n\n             Reserve Bank - Integrated Ombudsman Scheme, 2026\n\n1. What is RB-IOS, 2026?\nThe Reserve Bank - Integrated Ombudsman Scheme, 2026 (RB-IOS, 2026 / the Scheme) is\na cost-free, expeditious and non-adversarial alternate grievance redress mechanism for\ncustomer complaints involving deficiency in service by Regulated Entities covered under the\nScheme. It comes into force with effect from July 1, 2026."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "How is e rupee different from upi?",
+    "expected_answer": "e₹ is the digital form of the Indian Rupee, whereas UPI is a means of payment. In addition to being used for payments, e₹ also serves as a store of value and can be withdrawn from a bank account and held in an e₹ wallet. For person-to-person (P2P) and person-to-merchant (P2M) payments made using a CBDC QR code, transactions occur directly between two e₹ wallets and are settled instantaneously without passing through users' bank accounts. When a UPI QR code is scanned using an e₹ app, the settlement follows the UPI settlement timelines.",
+    "system_answer": "e\u20b9 (Digital Rupee) is different from UPI in that it serves as a 'store of value' and can be withdrawn from one's bank account and kept separately in the e\u20b9 wallet [chunk_id: f4ce281db9c9de18]. This means that e\u20b9 can be used for both payments and as a store of value, whereas UPI is primarily a means of payment. Additionally, transactions between two e\u20b9 wallets happen instantly without passing through the user's bank accounts, whereas UPI transactions may follow the standard UPI settlement timelines [chunk_id: 9eaaa610f91fada0].",
+    "retrieved_contexts": [
+      "19. Is there any difference between e\u20b9 and UPI?\n   e\u20b9 is a digital form of \u20b9 whereas UPI is a means of payment. In addition to being\n   used for payments, e\u20b9 also serves as a \u2018store of value\u2019, i.e., e\u20b9 can be withdrawn\n   from one\u2019s bank account and kept separately in the e\u20b9 wallet.\n\n    In the case of P2P and P2M payments made at any CBDC QR, the transactions\n   happen between two e\u20b9 wallets, and are settled instantaneously without passing\n   through user\u2019s bank accounts.",
+      "For P2P and P2M payments, the functionality of scanning a UPI QR from an e\u20b9\n   app has also been enabled. In such cases, the settlement will be based on the UPI\n   settlement timelines.\n\n20. What is offline feature of e\u20b9?\n   The offline feature of e\u20b9 enables the user to transact in locations with limited or no\n    internet connectivity.  It is expected to mirror the advantages of physical cash,\n\n                                        4"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What are the benefits of using e rupee?",
+    "expected_answer": "The document does not provide a single consolidated list of benefits of using e₹. However, it states that e₹ is at par with physical currency and offers features similar to physical cash, such as convenience of use, RBI's guarantee, and finality of settlement. It also serves as a store of value, supports instant wallet-to-wallet settlement for CBDC QR transactions, can be used 24×7, has no charges or fees, supports offline transactions in limited or no internet connectivity areas, and is legal tender.",
+    "system_answer": "According to [chunk_id: 14aae31c484eddf3], the usage of e\u20b9 is currently being pilot tested in the country. The potential benefits of e\u20b9-W are that it has the potential to transform the settlement systems for financial transactions and make them more efficient and secure [chunk_id: 0547ca9d978c3444]. \n\nAdditionally, e\u20b9 supports payments involving decimal or fractional values [chunk_id: 90bd3920f097eed4], and there are no charges or fees associated with using e\u20b9 or e\u20b9 wallets [chunk_id: 90bd3920f097eed4].",
+    "retrieved_contexts": [
+      "Digital Rupee (e\u20b9) \u2013 FAQs\n\n                         (Updated as on April 29, 2026)\n\nUsage of e\u20b9 is currently being pilot tested in the form of some studies in the\ncountry. The pilot is being tried in the Retail (public) and Wholesale (bank and\nother institutions) segments.\n\nA.  Retail CBDC",
+      "24. What are the potential benefits of e\u20b9-W?\n   e\u20b9-W has  the  potential  to  transform  the  settlement systems  for  financial\n    transactions and make them more efficient and secure.  It leverages on the\n    programmability and smart  contract  features  of  the  platform and reduces\n    settlement risk.\n\n25. Which are the participants in wholesale CBDC pilot?\n    Currently, there are 16 participants in the wholesale CBDC pilot, which includes\n   banks and non-banks.",
+      "14. Are decimal or fractional value payments supported in the Digital Rupee?\n\n   Yes, the e\u20b9 supports payments involving decimal or fractional values. Transactions\n   can be made for any amount up to two decimal places, similar to conventional\n   currency transactions conducted through digital payment modes.\n15. Are there any charges/fees for using e\u20b9?\n   There are no charges or fees associated with using e\u20b9 or e\u20b9 wallets."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Are rupee 1, rupee 2 and rupee 5 notes still printed?",
+    "expected_answer": "The printing of ₹2 and ₹5 banknotes has been discontinued and these denominations have been coinised. However, banknotes of these denominations issued earlier continue to be legal tender. ₹1 notes are issued by the Government of India from time to time, and both current and previously issued ₹1 notes continue to be legal tender.",
+    "system_answer": "No, the printing of rupee 1, rupee 2, and rupee 5 notes has been discontinued [chunk_id: 52dbfc93a4612cd1].",
+    "retrieved_contexts": [
+      "by the Reserve Bank of India. The printing of notes in the denominations of \u20b92 and\n\u20b95 has been discontinued and these denominations have been coinised as the cost\nof printing and servicing these banknotes was not commensurate with their life.\nHowever, such banknotes issued earlier can still be found in circulation and these\nbanknotes continue to be legal tender. \u20b91 notes are issued by the Government of\nIndia from time to time and such notes including those issued in the past also"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "On what factors does the amount of each value of banknotes printed depend on?",
+    "expected_answer": "The volume and value of banknotes to be printed each year depend on: (i) the expected increase in Notes in Circulation (NIC) to meet the growing needs of the public, and (ii) the need to replace soiled and mutilated notes. The expected increase in NIC is estimated using statistical models that consider macro-economic factors such as expected GDP growth, inflation, interest rates and growth in non-cash modes of payment. The replacement requirement depends on the volume of notes already in circulation and their average life. The Reserve Bank finalises the volume and value of banknotes in consultation with the Government of India and the printing presses, taking into account these factors and feedback from its regional offices and banks regarding expected demand for cash.",
+    "system_answer": "The amount of each value of banknotes printed depends on various factors such as the expected increase in Notes in Circulation (NIC) to meet the growing needs of the public [chunk_id: 7372d90c1ed97af9] and the need for replacing soiled/mutilated notes [chunk_id: 4232702c1b8f2842]. The expected increase in NIC is estimated using statistical models which consider macro-economic factors [chunk_id: eaa67d40b11257ad].",
+    "retrieved_contexts": [
+      "12. Who decides on the volume and value of banknotes to be printed and on\n   what basis?\nThe volume and value of banknotes to be printed in a year depends on various\nfactors such as (i) the expected increase in Notes in Circulation (NIC) to meet the\ngrowing needs of the public and (ii) the need for replacing soiled/mutilated notes so\nas to ensure that only good quality notes are in circulation. The expected increase in",
+      "such as expected growth in GDP, inflation, interest rates, growth in non-cash modes\n of payment etc. The replacement requirement depends on the volume of notes\n already in circulation and the average life of banknotes. The Reserve Bank estimates\n the volume and value of notes to be printed in a year based on the above factors as\n well as feedback received from  its own Regional Offices and banks regarding\n expected demand  for cash and  finalises the same  in  consultation  with  the",
+      "as to ensure that only good quality notes are in circulation. The expected increase in\nNIC is estimated using statistical models which consider macro-economic factors"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "Are coins with value less than 1 rupee still valid?",
+    "expected_answer": "Coins of 50 paise continue to be legal tender. Twenty-five paise coins were withdrawn from circulation with effect from June 30, 2011, and coins of denominations below 25 paise had been withdrawn earlier. All other denominations of coins issued by the Government of India under the Coinage Act, 2011 continue to remain legal tender.",
+    "system_answer": "According to [chunk_id: 4986ada6396f1391], coins of denominations below 25 paise were withdrawn from circulation much earlier. However, it does not explicitly state that coins with value less than 1 rupee are no longer valid. It only mentions that 25 paise coins have been withdrawn from circulation.",
+    "retrieved_contexts": [
+      "Twenty-five (25) paise coins have been withdrawn from circulation with effect from\nJune 30, 2011, vide gazette notification No. 2529 dated December 20, 2010, and\nare, therefore, no more legal tender. Coins of denominations below 25 paise were\nwithdrawn from circulation much earlier. All other denominations of coins of various\nsize, theme and design minted by Government of India under The Coinage Act, 2011\nand issued by RBI for circulation from time to time, continue to remain legal tender."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What is a public deposit?",
+    "expected_answer": "A public deposit is a 'deposit' as defined under Section 45I(BB) of the RBI Act, 1934 and paragraph 7(14) of the Reserve Bank of India (Non-Banking Financial Companies – Acceptance of Public Deposits) Directions, 2025. It excludes, among others, amounts received from the Central or State Government, specified financial institutions, other companies, share application money permitted under the Companies Act, directors or shareholders (subject to specified conditions), secured bonds or debentures, certain non-convertible debentures, promoters' unsecured loans, mutual funds, hybrid or subordinated debt meeting prescribed conditions, commercial paper, perpetual debt instruments, and infrastructure bonds. Thus, amounts raised from certain informed lenders are excluded from the definition of public deposit.",
+    "system_answer": "A public deposit is defined as a 'deposit' as defined under Section 45I(BB) of the RBI Act, 1934 [chunk_id: 267e7379e42fc28c]. It includes any receipt of money by way of deposit or loan or in any other form, but does not include amounts raised by way of share capital, or contributed as capital by partners of a firm [chunk_id: 267e7379e42fc28c].",
+    "retrieved_contexts": [
+      "14. What is \u2018deposit\u2019 and \u2018public deposit\u2019? Is it defined anywhere?\nThe term \u2018deposit\u2019 is defined under Section 45 I(bb) of the RBI Act, 1934. \u2018Deposit\u2019\nincludes and shall be deemed always to have included any receipt of money by way\nof deposit or loan or in any other form but does not include:\n (i) amount raised by way of share capital, or contributed as capital by partners of a\n     firm;"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What is the maximum time by which a mutual fund scheme should be launched after the grant of mutual fund registration?",
+    "expected_answer": "A mutual fund scheme must be launched within six (6) months from the date of registration of the mutual fund. If the scheme is not launched within this period, the registration granted is treated as cancelled.",
+    "system_answer": "According to [chunk_id: e79394c4c2c628c9], a Mutual Fund scheme should be launched within six (6) months from the date of registration of a mutual fund, failing which the registration granted would be treated as cancelled.",
+    "retrieved_contexts": [
+      "II.  FAQs for registered Mutual Funds\n\n(1)  Is it compulsory to launch a mutual fund scheme after grant of mutual fund\n    registration by SEBI?\n\n   A Mutual Fund scheme should be launched within six (6) months from the date of\n     registration of a mutual fund failing which the registration granted would be treated as\n    cancelled.\n\n\n(2) What is the filing fee for an offer document?"
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What are the different types of risks associated with a product/scheme in which an investor is investing?",
+    "expected_answer": "The document identifies seven types of risks associated with investments: (i) Market risk or Systematic Risk, (ii) Unsystematic Risk, (iii) Inflation Risk, (iv) Liquidity Risk, (v) Business Risk, (vi) Volatility Risk, and (vii) Currency Risk.",
+    "system_answer": "According to [chunk_id: 8ac7c19c0bb5f2ce], before investing in securities, it is better to understand the market and be fully aware of the risks involved. Be aware of your capacity to handle risk and invest accordingly. Generally, you can evaluate a potential investment by analysing seven key risks as mentioned below:\n\nThese seven key risks are:\n\n1. Market risk or Systematic Risk [chunk_id: 3f3ab4cceaa27080]\n2. Liquidity Risk [chunk_id: e162c326d3ea541d]\n3. Inflation Risk [chunk_id: 5d22400415513409]\n4. Business Risk [chunk_id: f9ad8e74cd5fd837]\n5. Volatility Risk [chunk_id: 9159b86646a49fb2]\n6. Currency Risk [chunk_id: af19e04d57255777]\n7. Unsystematic Risk [chunk_id: e162c326d3ea541d]\n\nThese risks are associated with a product/scheme in which an investor is investing.",
+    "retrieved_contexts": [
+      "Financial Education Booklet\n\nChapter 5 - Investment in Securities Market\n\nBefore  investing  in  securities,    it  is  better  to\nunderstand the market and be fully aware of the\nrisks involved. Be aware of your capacity to handle\nrisk and  invest accordingly. Generally, you can\nevaluate a potential investment by analysing seven\nkey risks as mentioned below:\n\nTypes of Risks\n\n\n\n                                                             Liquidity Risk",
+      "Types\n                 Systematic                                                                                  Currency Risk                     Risk                 of\n                        Risks\n\n\n   i.   Market risk or Systematic Risk\n     An investor may experience losses due to factors affecting the overall performance\n        of financial markets and macroeconomic factors. Stock market bubbles and\n      crashes are good examples of heightened market risk.",
+      "Types of Risks\n\n\n\n                                                             Liquidity Risk\n\n                                          Inflation Risk                     Business Risk\n\n\n\n\n                    Unsystematic                                                                                                         Volatility Risk                         Risk",
+      "iii.   Inflation risk\n        Inflation risk, also called as purchasing power risk, is the chance that the cash flows\n      from an investment won't be worth as much in the future as they are today because\n        of a decline in its purchasing power due to inflation.\n\n iv.   Liquidity risk\n        Liquidity risk arises when an investment cannot be bought or sold or converted into\n      cash quickly enough to prevent or minimize a loss or to meet any immediate",
+      "Financial Education Booklet\n\n\n      expense. You can minimize  this  risk to a great extent by diversifying your\n       investments.\n\n  v.   Business Risk\n           It refers to the risk that a business might stop its operations due to any unfavourable\n      market or financial situation.\n\n vi.    Volatility Risk\n           It refers to the risk when the stock prices of a company may fluctuate, even when\n      those companies aren't in danger of failing.",
+      "Volatility risk can be managed by investing through Systematic Investment Plan of Mutual\nFunds or buying equities directly from the market in smaller lots over a period of time. A\ngood understanding of the fundamentals of a company can help one make an appropriate\njudgment about the health of a company. Of course, investors should ignore the rumours\nand unsolicited messages for investing in securities market.",
+      "vii.   Currency Risk\n      Currency risk arises when there is a possibility of losing money due to unfavourable\n     movements in exchange rates. It may happen from change in price of one currency\n        in relation to other and investors who have assets across national borders are\n      exposed to this risk."
+    ],
+    "should_abstain": false,
+    "abstained": false
+  },
+  {
+    "question": "What is the current repo rate?",
+    "expected_answer": "",
+    "system_answer": null,
+    "retrieved_contexts": [],
+    "should_abstain": true,
+    "abstained": true
+  },
+  {
+    "question": "Who is the current RBI governor?",
+    "expected_answer": "",
+    "system_answer": null,
+    "retrieved_contexts": [],
+    "should_abstain": true,
+    "abstained": true
+  },
+  {
+    "question": "What is the GST rate on insurance?",
+    "expected_answer": "",
+    "system_answer": null,
+    "retrieved_contexts": [],
+    "should_abstain": true,
+    "abstained": true
+  },
+  {
+    "question": "What is today's Sensex value?",
+    "expected_answer": "",
+    "system_answer": null,
+    "retrieved_contexts": [],
+    "should_abstain": true,
+    "abstained": true
+  },
+  {
+    "question": "What is the current home loan interest rate at SBI?",
+    "expected_answer": "",
+    "system_answer": null,
+    "retrieved_contexts": [],
+    "should_abstain": true,
+    "abstained": true
+  },
+  {
+    "question": "Who is the current SEBI chairman?",
+    "expected_answer": "",
+    "system_answer": null,
+    "retrieved_contexts": [],
+    "should_abstain": true,
+    "abstained": true
+  },
+  {
+    "question": "What is the current inflation rate in India?",
+    "expected_answer": "",
+    "system_answer": null,
+    "retrieved_contexts": [],
+    "should_abstain": true,
+    "abstained": true
+  }
+]

@@ -1,0 +1,36 @@
+# API
+fastapi==0.138.0
+uvicorn==0.49.0
+python-multipart==0.0.32
+pydantic==2.13.4
+
+# LangGraph & LangChain
+langgraph==1.2.6
+langchain-core==1.4.8
+langchain-chroma==1.1.0
+langchain-huggingface==1.2.2
+langchain-community
+
+# Vector Store
+chromadb==1.5.9
+
+# Embeddings & Reranking
+sentence-transformers==5.6.0
+
+# Sparse Retrieval
+rank-bm25==0.2.2
+
+# Document Parsing
+pymupdf==1.27.2.3
+
+# LLM
+groq==1.5.0
+
+# Utilities
+python-dotenv==1.2.2
+pyyaml==6.0.3
+
+# Evaluation
+ragas
+datasets
+langchain-google-genai

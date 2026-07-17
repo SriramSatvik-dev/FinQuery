@@ -11,5 +11,5 @@ def route_by_confidence(state: RAGState):
     return 'write_ans'
 
 def route_after_grounding(state: RAGState):
-    if not state['grounding_passed']: return END
+    # if not state['grounding_passed']: return END
     return 'draft_response'

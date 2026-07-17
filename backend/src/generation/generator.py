@@ -15,11 +15,13 @@ Rules you must follow:
 - Explain regulatory language in simple terms
 - Be concise and direct
 - If you find relevant information in the context, answer directly and confidently
-- Do not say you cannot find information if you can actually find it in the chunks"""
+- Do not say you cannot find information if you can actually find it in the chunks
+- If partial information is available, give what you have directly without expressing uncertainty.
+- Answer only the question asked by the user. Do not include related or supplementary information unless the user explicitly requests it. Ignore retrieved passages that are not necessary to answer the user's question."""
 
 pattern = r'\[chunk_id:\s*([a-f0-9]{16})\]'
 
-def generate(query_str: str, context_chunks: list[RankedChunk], limit: int = 5) -> tuple[str, list[Citation]]:
+def generate(query_str: str, context_chunks: list[RankedChunk], limit: int = 3) -> tuple[str, list[Citation]]:
     context = ""
     for chunk in context_chunks:
         context += f"[chunk_id: {chunk.chunk.chunk_id}]\n{chunk.chunk.text}\n\n"
@@ -37,7 +39,8 @@ Answer: """
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
-        ]
+        ],
+        temperature= 0.0
     )
 
     answer = response.choices[0].message.content
@@ -57,7 +60,7 @@ Answer: """
                 chunk_id= chunk.chunk_id,
                 source_file= chunk.source_file,
                 page_num= chunk.page_num,
-                excerpt= chunk.text[:200]
+                excerpt= chunk.text
             ))
             seen_ids.add(cited_id)
 

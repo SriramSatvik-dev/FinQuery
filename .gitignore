@@ -17,6 +17,7 @@ dist/
 build/
 .venv/
 venv/
+eval_venv/
 
 # Model cache (large, re-downloaded automatically)
 .cache/
