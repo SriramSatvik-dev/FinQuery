@@ -21,7 +21,7 @@ Rules you must follow:
 
 pattern = r'\[chunk_id:\s*([a-f0-9]{16})\]'
 
-def generate(query_str: str, context_chunks: list[RankedChunk], limit: int = 3) -> tuple[str, list[Citation]]:
+def generate(query_str: str, context_chunks: list[RankedChunk], limit: int = 5) -> tuple[str, list[Citation]]:
     context = ""
     for chunk in context_chunks:
         context += f"[chunk_id: {chunk.chunk.chunk_id}]\n{chunk.chunk.text}\n\n"

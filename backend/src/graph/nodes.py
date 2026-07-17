@@ -51,20 +51,20 @@ def write_ans(state: RAGState):
     }
 
 def grounding_check(state: RAGState):
-    # passed = check_grounding(state['answer'], state['citations'], state['reranked_chunks'])
+    passed = check_grounding(state['answer'], state['citations'], state['reranked_chunks'])
 
-    # if not passed:
-    #     return {
-    #         'grounding_passed': False,
-    #         'abstain': True,
-    #         'final_response': {
-    #             'answer': None,
-    #             'abstained': True,
-    #             'reason': 'grounding_check_failed',
-    #             'message': 'Generated answer could not be verified against source documents',
-    #             'citations': []
-    #         }
-    #     }
+    if not passed:
+        return {
+            'grounding_passed': False,
+            'abstain': True,
+            'final_response': {
+                'answer': None,
+                'abstained': True,
+                'reason': 'grounding_check_failed',
+                'message': 'Generated answer could not be verified against source documents',
+                'citations': []
+            }
+        }
     
     return {'grounding_passed': True}
 
